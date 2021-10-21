@@ -1,0 +1,13 @@
+@import 'base_variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'core';
+@import 'card';
+
+.app-info {
+	padding: 10px 0;
+	background: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	display: none;
+}

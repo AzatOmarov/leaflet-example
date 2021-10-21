@@ -1,0 +1,106 @@
+html,
+body {
+	min-height: 100%;
+	scroll-behavior: smooth;
+}
+
+* {
+	outline: none !important;
+}
+
+body {
+	background-color: white !important;
+	font-size: $md-font-size;
+	color: white;
+	font-family: Manrope, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	transition: background-color .2s linear;
+}
+
+main {
+	min-height: 100vh;
+}
+
+
+@include media-breakpoint-down(md) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+
+.app-main {
+	min-height: 100%;
+	scroll-behavior: smooth;
+}
+
+.card {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+	margin-bottom: 20px;
+	transition: box-shadow 0.2s ease-in-out, background-color .2s linear;
+	border-radius: 4px;
+	background-color: white;
+	&__heading{
+		font-size: 1rem;
+		margin-bottom: 10px;
+		font-weight: 700;
+	}
+}
+
+.mapPopUp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	font-size: 14px;
+	border-radius: 5px;
+	position: relative;
+	z-index: 1000;
+	padding: 12px 20px;
+}
+
+
+.app-content {
+	min-height: calc(100vh - 216px);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.app-page {
+	padding-bottom: 50px;
+	padding-top: 20px;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+	.app-page {
+		padding-bottom: 20px;
+	}
+}
+
+#mapid { height: 180px; }
+
+.leaflet-container {
+	width: 100%;
+	height: calc(100vh - 216px);
+	.leaflet-div-icon{
+		background: transparent;
+		border: none;
+	}
+	.popup{
+		&__id{
+			color: darkgrey;
+			margin-bottom: .5rem;
+		}
+		&__price{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+
+  

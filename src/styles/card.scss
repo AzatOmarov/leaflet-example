@@ -1,0 +1,66 @@
+.card{
+	display: flex;
+	flex-direction: column;
+	color: black;
+	&__heading {
+		font-size: 1rem;
+		margin-bottom: 10px;
+		font-weight: 700;
+	}
+}
+
+.card-body{
+	padding: 10px;
+	ul{
+		&::-webkit-scrollbar {
+			width: 1px;
+		}
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: slategrey;
+		}
+	}
+	li{
+		list-style: none;
+	}
+	.general-list{
+		overflow-x: hidden !important;
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: slategrey;
+		}
+	}
+}
+
+.client-card {
+	margin: 0 -10px;
+	padding: 10px 20px;
+	border-bottom: 1px solid #eee;
+	&__title{
+		font-weight: 700;
+	}
+	&__list{
+		font-size: 12px;
+		&::-webkit-scrollbar {
+			width: 3px;
+		}
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: slategrey;
+		}
+	}
+	&__info{
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+	}
+}
